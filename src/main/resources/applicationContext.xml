@@ -11,4 +11,8 @@
           class="ru.fess.spring.RockMusic">
     </bean>
 
+    <bean id="musicPlayer" class="ru.fess.spring.MusicPlayer">
+        <constructor-arg ref="musicBean" />
+    </bean>
+
 </beans>
