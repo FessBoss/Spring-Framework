@@ -12,7 +12,10 @@
     </bean>
 
     <bean id="musicPlayer" class="ru.fess.spring.MusicPlayer">
-        <constructor-arg ref="musicBean" />
+        <property name="music" ref="musicBean" />
+
+        <property name="name" value="Fess" />
+        <property name="volume" value="25" />
     </bean>
 
 </beans>
