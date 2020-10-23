@@ -10,14 +10,16 @@
     <context:property-placeholder location="classpath:musicPlayer.properties"/>
 
     <bean id="musicBean"
-          class="ru.fess.spring.RockMusic">
+          class="ru.fess.spring.ClassicalMusic"
+          init-method="doMyInit"
+          destroy-method="doMuDestroy">
     </bean>
 
-    <bean id="musicPlayer" class="ru.fess.spring.MusicPlayer" scope="prototype">
-        <property name="music" ref="musicBean"/>
+<!--    <bean id="musicPlayer" class="ru.fess.spring.MusicPlayer" scope="prototype">-->
+<!--        <property name="music" ref="musicBean"/>-->
 
-        <property name="name" value="${musicPlayer.name}"/>
-        <property name="volume" value="${musicPlayer.volume}"/>
-    </bean>
+<!--        <property name="name" value="${musicPlayer.name}"/>-->
+<!--        <property name="volume" value="${musicPlayer.volume}"/>-->
+<!--    </bean>-->
 
 </beans>
