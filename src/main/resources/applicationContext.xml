@@ -12,7 +12,8 @@
     <bean id="musicBean"
           class="ru.fess.spring.ClassicalMusic"
           init-method="doMyInit"
-          destroy-method="doMuDestroy">
+          destroy-method="doMuDestroy"
+          factory-method="getClassicalMusic">
     </bean>
 
 <!--    <bean id="musicPlayer" class="ru.fess.spring.MusicPlayer" scope="prototype">-->
