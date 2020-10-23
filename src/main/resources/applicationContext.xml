@@ -13,7 +13,7 @@
           class="ru.fess.spring.RockMusic">
     </bean>
 
-    <bean id="musicPlayer" class="ru.fess.spring.MusicPlayer">
+    <bean id="musicPlayer" class="ru.fess.spring.MusicPlayer" scope="prototype">
         <property name="music" ref="musicBean"/>
 
         <property name="name" value="${musicPlayer.name}"/>
